@@ -22,22 +22,23 @@
     </style>
 </head>
 
-<body class="font-sora">
+<body class="font-sora m-0 p-0 w-full h-full overflow-x-hidden">
     <!--header section-->
 
-    <header>
+    <header class="h-[600px]">
         <!--Nav Bar-->
 
-        <nav class="bg-base-300">
+        <nav class="bg-base-300 mb-40px">
             <div class="navbar text-center px-5 lg:px-20">
                 <div class="navbar-start">
                     <div class="flex">
-                        <img src="image/c1-assets/logo-header.png" alt="">
-                        <a class="btn btn-ghost text-xl hidden lg:inline-block">
+                        <img class="items-center" src="image/c1-assets/logo-header.png" alt="">
+                        
+                        <a class="btn btn-ghost text-xl hidden lg:flex">
                             Browse<span class="text-accent  ml-[-4px]  mr-[-4px]">4</span>Pet
                         </a>
                     </div>
-                    </div>
+                </div>
                     <div class="navbar-end">
                     <div class="dropdown">
                         <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
@@ -48,20 +49,14 @@
                             </svg>
                         </div>
                         <ul tabindex="0"
-                            class="menu menu-sm dropdown-content bg-base-100 rounded-box z-[1] mt-3 w-52 p-2 shadow">
+                            class="menu menu-sm dropdown-content bg-base-100 rounded-box z-[1] mt-3 w-28 p-2 shadow  absolute right-0 transform -translate-x-0">
                             <li><a>Find a Pet</a></li>
                             <li><a>Breed</a></li>
                             <li><a>Contact Us</a></li>
                         </ul>
                     </div>
                 </div>
-                <div class="navbar-center hidden lg:flex">
-                    <ul class="menu menu-horizontal px-1">
-                        <li><a>Find a Pet</a></li>
-                        <li><a>Breeds</a></li>
-                        <li><a>Contact Us</a></li>
-                    </ul>
-                </div>
+                
                 <div class="navbar-end gap-4 hidden lg:flex">
                     <i class="fa-regular fa-bell"></i>
                     <i class="fa-solid fa-magnifying-glass"></i>
@@ -70,11 +65,104 @@
                 </div>
             </div>
         </nav>
+        <!--Banner section-->
+
+        <banner class="relative flex flex-col md:block items-start min-h-screen">
+            <div class="flex flex-col p-5 items-start justify-center relative z-10 lg:p-20 ">
+                <h1 class="text-black text-2xl font-bold mb-5">Pamper Your pet,<br>Because They Deserve<br>the Best</h1>
+                <p class="mb-5 text-20px">Discover a world of treats, toys, and essentials handpicked for<br>your furry
+                    friends. Shop now and make tails wag with joy!</p>
+                <button class="btn bg-amber-300">Find a Pet</button>
+            </div>
+
+            <img class=" w-full max-md:-mt-28 md:absolute md:top-0 md:right-0 md:w-auto lg:w-full lg:p-20"
+                src="image/c1-assets/cat-big.png" alt="Cat Image">
+        </banner>
+
+
     </header>
     <!--Main section-->
 
-    <main>
+    <main class="p-5 lg:p-20 mt-20 md:mt-40">
+    
+        <!-- 1st card-->
+        <h1 class="text-2xl text-black font-bold mb-10"> Browse By Categories </h1>
+        <div class="grid grid-cols-2 gap-5 mb-20 lg:grid-cols-6">
 
+            <div
+                class="flex flex-col-reverse justify-center items-center card bg-base-100 w-[170px] h-[250px] bg-[#F9DF8A] ">
+                <div class="card-body justify-center items-center -mt-[10px]">
+                    <h2 class="card-title font-[20px]">Dog</h2>
+                    <p class="font-[16px]">3 items</p>
+                </div>
+                <figure class=" bg-[#ffffff] px-[48px] py-[34px] w-[120px] h-[120px] rounded-full mt-[20px]">
+                    <img src="image/c1-assets/dog-cartoon.png" alt="Shoes" />
+                </figure>
+            </div>
+            <!--2nd card-->
+            <div
+                class="flex flex-col-reverse justify-center items-center card bg-base-100 w-[170px] h-[250px] bg-[#F9DF8A]">
+                <div class="card-body justify-center items-center -mt-[10px]">
+                    <h2 class="card-title font-[20px]">Fish</h2>
+                    <p class="font-[16px]">3 items</p>
+                </div>
+                <figure class=" bg-[#ffffff] px-[48px] py-[34px] w-[120px] h-[120px] rounded-full mt-[20px]">
+                    <img src="image/c1-assets/fish-cartoon.png" alt="Shoes" />
+                </figure>
+            </div>
+            <!--3rd card-->
+            <div
+                class="flex flex-col-reverse justify-center items-center card bg-base-100 w-[170px] h-[250px] bg-[#F9DF8A]">
+                <div class="card-body justify-center items-center -mt-[10px]">
+                    <h2 class="card-title font-[20px]">Cat</h2>
+                    <p class="font-[16px]">3 items</p>
+                </div>
+                <figure class=" bg-[#ffffff] px-[48px] py-[34px] w-[120px] h-[120px] rounded-full mt-[20px]">
+                    <img src="image/c1-assets/cat-cartoon.png" alt="Cat" />
+                </figure>
+            </div>
+            <!--4th card-->
+            <div
+                class="flex flex-col-reverse justify-center items-center card bg-base-100 w-[170px] h-[250px] bg-[#F9DF8A]">
+                <div class="card-body justify-center items-center -mt-[10px]">
+                    <h2 class="card-title font-[20px]">Birds</h2>
+                    <p class="font-[16px]">3 items</p>
+                </div>
+                <figure class=" bg-[#ffffff] px-[48px] py-[34px] w-[120px] h-[120px] rounded-full mt-[20px]">
+                    <img src="image/c1-assets/bird-cartoon.png" alt="Birds" />
+                </figure>
+            </div>
+            <!--5th card-->
+            <div
+                class="flex flex-col-reverse justify-center items-center card bg-base-100 w-[170px] h-[250px] bg-[#F9DF8A]">
+                <div class="card-body justify-center items-center -mt-[10px]">
+                    <h2 class="card-title font-[20px]">Dog</h2>
+                    <p class="font-[16px]">3 items</p>
+                </div>
+                <figure class=" bg-[#ffffff] px-[48px] py-[34px] w-[120px] h-[120px] rounded-full mt-[20px]">
+                    <img src="image/c1-assets/dog-cartoon.png" alt="Shoes" />
+                </figure>
+            </div>
+            <!--6th card-->
+            <div
+                class="flex flex-col-reverse justify-center items-center card bg-base-100 w-[170px] h-[250px] bg-[#F9DF8A]">
+                <div class="card-body justify-center items-center -mt-[10px]">
+                    <h2 class="card-title font-[20px]">Rabit</h2>
+                    <p class="font-[16px]">3 items</p>
+                </div>
+                <figure class=" bg-[#ffffff] px-[48px] py-[34px] w-[120px] h-[120px] rounded-full mt-[20px]">
+                    <img src="image/c1-assets/rabbit-cartoon.png" alt="Rabit" />
+                </figure>
+            </div>
+        </div>
+        <!--trending part-->
+
+        <section class="bg-base-300 -mx-5 w-screen min-h-screen py-10 lg:-mx-20">
+            <h1 class="text-2xl ml-5 text-black font-bold lg:ml-20">Trending Pet Products</h1>
+        </section>
+        
+        
+     
     </main>
 
     <!--Footer section-->
